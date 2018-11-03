@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Throwback Thursday</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="/css/clean-blog.min.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <style>
+        html, body { height: 100% }
+    </style>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="/index.html">#ThrowbackThursday</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/archive.html">Archive</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/datasets.html">Datasets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('https://github.com/tthrowbackthurs/tthrowbackthurs.github.io/blob/master/img/T-rex-splash2.jpg?raw=true')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="post-heading">
+              <h1>Worldwide Dinosaur Discoveries</h1>
+              <h2 class="subheading">Week 15 Viz</h2>
+              <span class="meta">Posted by
+                <a href="https://twitter.com/DavidVelleca">David Velleca</a>
+                on June 16, 2018</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+<!-- Post Content -->
+    <article>
+      <div class="container">
+        <div class="row">
+		  <div class="col-lg-8 col-md-10 mx-auto">
+			<blockquote class="blockquote"><a href="https://query.data.world/s/mxdxhvppcc7mluklp4rz3ik7r5kybp" target="_blank">Click here to download this week's dataset as a CSV</a></blockquote>
+			<blockquote class="blockquote"><a href="https://query.data.world/s/6lentdm63v6ywv25tg52txkjwwb5nh" target="_blank">Click here to download this week's dataset as a Hyper Extract</a></blockquote>
+		  </div>
+		  <div class='tableauPlaceholder' id='viz1529073456871' style='position: relative'>
+			<noscript>
+				<a href='#'>
+					<img alt='When Dinosaurs Ruled The Earth ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Wh&#47;WhenDinosaursRuledTheEarth&#47;WhenDinosaursRuledTheEarth&#47;1_rss.png' style='border: none' />
+				</a>
+			</noscript>
+			<object class='tableauViz'  style='display:none;'>
+				<param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+				<param name='embed_code_version' value='3' /> <param name='site_root' value='' />
+				<param name='name' value='WhenDinosaursRuledTheEarth&#47;WhenDinosaursRuledTheEarth' />
+				<param name='tabs' value='no' />
+				<param name='toolbar' value='yes' />
+				<param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Wh&#47;WhenDinosaursRuledTheEarth&#47;WhenDinosaursRuledTheEarth&#47;1.png' /> 
+				<param name='animate_transition' value='yes' />
+				<param name='display_static_image' value='yes' />
+				<param name='display_spinner' value='yes' />
+				<param name='display_overlay' value='yes' />
+				<param name='display_count' value='yes' />
+				<param name='filter' value='publish=yes' />
+			</object>
+		  </div>
+			<script type='text/javascript'>
+				var divElement = document.getElementById('viz1529073456871');
+				var vizElement = divElement.getElementsByTagName('object')[0];
+				vizElement.style.width='800px';vizElement.style.height='1427px';
+				var scriptElement = document.createElement('script');
+				scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+				vizElement.parentNode.insertBefore(scriptElement, vizElement);
+			</script>
+		  <div class="col-lg-8 col-md-10 mx-auto">
+			<h2 class="section-heading">Data Storytelling and Data</h2>
+				<p>This week's viz is pretty simple.  A map using the longitude and latitude provided in the dataset, a jitter plot showing how long ago dinosaurs lived, and a stacked bar showing the number of dinosaur discoveries by decade.</p>
+				<p>For the map, I used a custom map I created in Mapbox as my background map.  This allowed my preferred color theme to persist through the viz.  To ensure that I had each row of data from the dataset (each row equals one discovery), I made sure to bring in the key on the table, which was the Accepted Number.  This resulted in one dot per discovery.  I colored each dot by the geological time period.  This required a bulky calculated field to first remove the 'Early'/'Middle'/'Late' qualifiers off the data in the [Early Interval] column, and secondly using a case statement to assign each of these modified intervals to the era - either Triassic, Jurassic or Cretaceous.  This calculated field would be used throughout the other vizzes.  I found the information on which era the data in the [Early Interval] column belonged to with a simple web search.</p>
+				<p>The jitter plot uses the INDEX() and modulus function to spread out my dots in the viz.  To get the 'age' of the dinosaurs, I took the average of the ([Max Ma] + [Min Ma]) / 2.  By bringing the [Accepted Name] column to the details card, this averaged the age by the Dinosaur.  I then used SUM([Number of Records]) to drive the size.</p>
+				<p>My stacked bar graph at the bottom of the dashboard looks at how many discoveries by geological time period were made in each decade.  This one actually surprised me.  I expected that many of the early dinosaur discoveries would be of Cretaceous dinosaurs, as they are the most recent dinosaurs, and therefore closer to the surface when excavating.  My theory is that though we don't see many documented discoveries of Cretaceous dinosaurs in the early days, humans were likely disregarding or missing the fossils they were uncovering.</p>
+				<p>The viz is pretty interactive, with a main filter on Country - built off a case statement that translated the country code - [Cc] to the country name.  I also added a filter to allow the user to find a specific dinosaur.  Thess filters drive all vizzes on the dashboard.  Additionally, clicking on the jitter plot filters the map, showing the distinct locations where dinosaurs were found.</p>
+				<p>Does this viz inspire you to create your own?  What kind of insights can you unearth?  Take some time, and post your viz to Tableau Public, and Twitter with the hashtag #ThrowbackThursday, tagging <a href="https://twitter.com/TThrowbackThurs" target="_blank">@TThrowbackThurs</a>.</p>
+			<h2 class="section-heading">Data Source</h2>
+				<p>The dataset this week was sourced from the <a href="https://paleobiodb.org/#/" target="_blank">Paleobiology Database</a>.  Please be sure to cite the source on your viz.</p>
+				<p>I took the photo on this page at the Houston Museum of Natural Science in 2016.</p>
+		  </div>
+	  </div>
+    </article>
+
+      <hr>
+
+   <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <ul class="list-inline text-center">
+              <li class="list-inline-item">
+                <a href="https://twitter.com/TThrowbackThurs">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              <li class="list-inline-item">
+                <a href="https://github.com/tthrowbackthurs/Datasets">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <p class="copyright text-muted">Copyright &copy; ThrowbackThursday.com 2018</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/clean-blog.min.js"></script>
+
+  </body>
+
+</html>

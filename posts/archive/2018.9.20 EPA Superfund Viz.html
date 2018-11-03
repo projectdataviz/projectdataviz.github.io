@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Throwback Thursday</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="/css/clean-blog.min.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <style>
+        html, body { height: 100% }
+    </style>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="/index.html">#ThrowbackThursday</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/archive.html">Archive</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/datasets.html">Datasets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('https://raw.githubusercontent.com/tthrowbackthurs/tthrowbackthurs.github.io/master/img/EPA.jpg')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="post-heading">
+              <h1>EPA Superfund Sites</h1>
+              <h2 class="subheading">Week 29 Viz</h2>
+              <span class="meta">Posted by
+                <a href="https://twitter.com/DavidVelleca">David Velleca</a>
+                on September 21, 2018</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+<!-- Post Content -->
+    <article>
+      <div class="container">
+        <div class="row">
+		  <div class="col-lg-8 col-md-10 mx-auto">
+			<blockquote class="blockquote"><a href="https://query.data.world/s/aeitvizweh6vxqcypibbuygqhqw7gd" target="_blank">Click here to download this week's dataset as a CSV</a></blockquote>
+			<blockquote class="blockquote"><a href="https://query.data.world/s/paltr5vskxmobhd7c652qj6i67t2gs" target="_blank">Click here to download this week's dataset as a Hyper Extract</a></blockquote>
+		  </div>
+		  <div class='tableauPlaceholder' id='viz1537575217379' style='position: relative'>
+				<noscript>
+					<a href='#'>
+						<img alt='Toxic Sites in the Neighborhood ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;To&#47;ToxicSitesintheNeighborhood&#47;ToxicSitesintheNeighborhood&#47;1_rss.png' style='border: none' />
+					</a>
+				</noscript>
+				<object class='tableauViz'  style='display:none;'>
+					<param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+					<param name='embed_code_version' value='3' /> 
+					<param name='site_root' value='' />
+					<param name='name' value='ToxicSitesintheNeighborhood&#47;ToxicSitesintheNeighborhood' />
+					<param name='tabs' value='no' />
+					<param name='toolbar' value='yes' />
+					<param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;To&#47;ToxicSitesintheNeighborhood&#47;ToxicSitesintheNeighborhood&#47;1.png' /> 
+					<param name='animate_transition' value='yes' />
+					<param name='display_static_image' value='yes' />
+					<param name='display_spinner' value='yes' />
+					<param name='display_overlay' value='yes' />
+					<param name='display_count' value='yes' />
+					<param name='filter' value='publish=yes' />
+				</object>
+		  </div>
+		  <script type='text/javascript'>
+				var divElement = document.getElementById('viz1537575217379');
+				var vizElement = divElement.getElementsByTagName('object')[0];
+				vizElement.style.width='700px';vizElement.style.height='827px';
+				var scriptElement = document.createElement('script');
+				scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+				vizElement.parentNode.insertBefore(scriptElement, vizElement);
+		  </script>
+		  <div class="col-lg-8 col-md-10 mx-auto">
+			<h2 class="section-heading">Data Storytelling and Dataviz Approach</h2>
+				<p>I took a bit more time with this viz so I could get it just right.  The data is well suited to mapping by plotting the Superfund sites on a map, and also a timeline, showing the number of sites by year.  I decided to focus on creating a map.  I could have made a very simple map, but when I started looking at this dataset, I was curious about how many sites were within my area.  So I decided to tackle this question.</p>
+				<p>Initially, I was a bit stuck trying to figure out my approach.  The distance calculation using great circle routes is prominent on the web, with Tableau even having a knowledge base article that references it.  However, a lot of the examples that I saw relied on data blending.  The problem that I was finding with that approach is that the blend acts like an inner join.  Alternate approaches join the dataset to itself, but in both instances, this means that the list of possible locales to calculate a distance from is limited to the sites that exist in the main data source (the EPA data in this case).</p>
+				<p>I really wanted to be able to figure out the number of sites within a set radius for any zip code, so the blending just wasn't going to work.  Instead, I joined my EPA dataset to a supplemental zip code dataset with a right join on zip code.  This meant that I brought in all of my EPA data, while also bringing in a row for every zip code even when I didn't have it in my EPA data.  This meant that I was going to have to deal with some null values, but more on that later.</p>
+				<p>Now that I had my data, the next step was to calculate the distance.  The calculation requires two latitudes and longitudes - in this case, one for the sites, and one for the chosen location.  I created a parameter that included all the zip codes, and used this to drive calcs for [Chosen Lat] and [Chosen Long].  The catch here is that the Chosen Lat and Long have to be available regardless of the data in my EPA data.  If I had just used a simple calc like IF [Zip Code Parameter] = STR([Zip]) THEN [Lat2] END, I would only have a Chosen Latitude if the Site's Zip was the same as the input parameter.  This isn't any better than the solution that uses blending.</p>
+				<p>Here's the magic - using a level of detail calculation, I could force the data to be available regardless of the site's zip.  The calculation is actually pretty straight forward - {FIXED : AVG(IF [Zip Code Parameter] = STR([Zip]) THEN [Lat2] END)}.  I duplicated the calculated field, adjusted for Longitude, and I was ready to calculate the distance.  I won't go into that logic here, but if you're interested, <a href ="https://kb.tableau.com/articles/howto/calculate-the-distance-between-points-on-a-map" target="_blank">check out this site</a>.</p>
+				<p>I then created a parameter that allows the user to set their desired distance radius and created a Set, with the a Condition by formula where [Distance] &lt;= [Distance Parameter], used this as the filter and I was done.  I polished it off with a summary of the chosen locale and how many sites were in the distance range.</p>
+				<p>I mentioned above that I would come back to the nulls.  I actually made the nulls work to my advantage.  I was able to use ISNULL([Epa Id]) in several of the calculations I used to create my tooltips, drive my colors, and shapes on the map.  If you'd like to see what I mean, take a look at the workbook in Tableau.</p>
+				<p>A few caveats here, for the benefit of my GIS expert friend who suggested I do this the right way with GIS software...  The distances are approximate; the accuracy is better when a smaller radius is chosen; the sites' locations are based on their zip codes, which have the latitude and longitude at their approximate centers.  For what I'm doing though, it's close enough.</p> 
+				<p>I really enjoyed the challenge this week, and learned some things in the process.  If you'd like to see what you can do with this week's dataset, create your viz and post your work to Tableau Public and Twitter with the hashtag #ThrowbackDataThursday, tagging <a href="https://twitter.com/TThrowbackThurs" target="_blank">@TThrowbackThurs</a>.  We'd really love to see what you can come up with!</p>
+			<h2 class="section-heading">Data Source</h2>
+				<p>This week's dataset comes from <a href="https://www.epa.gov/superfund/interim-priorities-list-ipl-and-expanded-eligibility-list-eel-sites" target="_blank">the EPA</a>.  Please be sure to cite the source on your viz.</p>
+		  </div>
+	  </div>
+    </article>
+      <hr>
+
+   <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <ul class="list-inline text-center">
+              <li class="list-inline-item">
+                <a href="https://twitter.com/TThrowbackThurs">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              <li class="list-inline-item">
+                <a href="https://github.com/tthrowbackthurs/Datasets">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <p class="copyright text-muted">Copyright &copy; ThrowbackThursday.com 2018</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/clean-blog.min.js"></script>
+
+  </body>
+
+</html>

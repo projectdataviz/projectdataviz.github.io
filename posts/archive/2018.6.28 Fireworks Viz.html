@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Throwback Thursday</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="/css/clean-blog.min.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <style>
+        html, body { height: 100% }
+    </style>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="/index.html">#ThrowbackThursday</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/archive.html">Archive</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/datasets.html">Datasets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('https://raw.githubusercontent.com/tthrowbackthurs/tthrowbackthurs.github.io/master/img/fireworks.jpg?raw=true')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="post-heading">
+              <h1>Fireworks - Use, Sales and Injuries</h1>
+              <h2 class="subheading">Week 17 Viz</h2>
+              <span class="meta">Posted by
+                <a href="https://twitter.com/DavidVelleca">David Velleca</a>
+                on June 28, 2018</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+<!-- Post Content -->
+    <article>
+      <div class="container">
+        <div class="row">
+		  <div class="col-lg-8 col-md-10 mx-auto">
+			<blockquote class="blockquote"><a href="https://query.data.world/s/xhv7aj522bu433n6qfp5nkjl2adh7g" target="_blank">Click here to download this week's dataset as a CSV</a></blockquote>
+			<blockquote class="blockquote"><a href="https://query.data.world/s/gddxnem2y5pimvf4ylmwi5ofs526mi" target="_blank">Click here to download this week's dataset as a Hyper Extract</a></blockquote>
+		  </div>
+		  <div class='tableauPlaceholder' id='viz1530204298219' style='position: relative'>
+			<noscript>
+				<a href='#'>
+					<img alt='Fireworks in the USA ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fi&#47;FireworksintheUSA-2000to2017&#47;FireworksintheUSA&#47;1_rss.png' style='border: none' />
+				</a>
+			</noscript>
+			<object class='tableauViz'  style='display:none;'>
+				<param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+				<param name='embed_code_version' value='3' /> 
+				<param name='site_root' value='' />
+				<param name='name' value='FireworksintheUSA-2000to2017&#47;FireworksintheUSA' />
+				<param name='tabs' value='no' />
+				<param name='toolbar' value='yes' />
+				<param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fi&#47;FireworksintheUSA-2000to2017&#47;FireworksintheUSA&#47;1.png' /> 
+				<param name='animate_transition' value='yes' />
+				<param name='display_static_image' value='yes' />
+				<param name='display_spinner' value='yes' />
+				<param name='display_overlay' value='yes' />
+				<param name='display_count' value='yes' />
+				<param name='filter' value='publish=yes' />
+			</object>
+          </div>                
+		  <script type='text/javascript'>                    
+			var divElement = document.getElementById('viz1530204298219');                    
+			var vizElement = divElement.getElementsByTagName('object')[0];                    
+			vizElement.style.width='1100px';vizElement.style.height='727px';                    
+			var scriptElement = document.createElement('script');                    
+			scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+			vizElement.parentNode.insertBefore(scriptElement, vizElement);
+		  </script>
+		  <div class="col-lg-8 col-md-10 mx-auto">
+			<h2 class="section-heading">Data Storytelling and Dataviz Approach</h2>
+				<p>This week's viz is pretty straightforward, and was a lot of fun to build.  I used a dual axis chart with both bars and shapes to create a lollipop chart.  For the shapes, I found some fireworks clip art on the internet, and created a custom shape palette.  Then I used case statements to randomize the order of the shapes based on both the metric that is chosen in the parameter, and the year.  I was careful to make sure that my shapes were all the same size, so that they do not inadvertently distort the data.  The chart works both with the theme and in presenting the data - the individual fireworks work out to look kind of like a line chart allowing the user to see trends and changes in the data, while also looking like fireworks in the sky.  The coloring is a bit random, assigned by discrete values tied to rates - percentage of consumer fireworks, dollars per pound consumed, and injuries per pound consumed.  In the interest of keeping the viz clean, I did not include this information either as a legend or in the tooltip, I only used it to drive the color.</p>
+				<p>I hope you enjoy this viz.  If you'd like to take a stab at your own viz, download the dataset and publish your work to Tableau Public, and Twitter with the hashtag #ThrowbackThursday, tagging <a href="https://twitter.com/TThrowbackThurs" target="_blank">@TThrowbackThurs</a>.  We'd really love to see what you can come up with!</p>
+			<h2 class="section-heading">Data Source</h2>
+				<p>The dataset this week was sourced from <a href="http://www.americanpyro.com/industry-facts-figures" target="_blank">The American Pyrotechnics Association</a>.    Please be sure to cite the source on your viz.</p>
+		  </div>
+	  </div>
+    </article>
+
+      <hr>
+
+   <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <ul class="list-inline text-center">
+              <li class="list-inline-item">
+                <a href="https://twitter.com/TThrowbackThurs">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              <li class="list-inline-item">
+                <a href="https://github.com/tthrowbackthurs/Datasets">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <p class="copyright text-muted">Copyright &copy; ThrowbackThursday.com 2018</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/clean-blog.min.js"></script>
+
+  </body>
+
+</html>

@@ -32,7 +32,8 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-	      <a class="navbar-brand" href="/index.html"><img src="Logo.png" width="250"></img></a>
+	      <!--<a class="navbar-brand" href="/index.html"><img src="Logo.png" width="250"></img></a>-->
+		  <a class="navbar-brand" href="/index.html">David Velleca</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -64,9 +65,9 @@
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
             <div class="post-heading">
-              <h1>Getting Started<h1>
-              <h2 class="subheading">Kicking off https://davidvelleca.com</h2>
-              <span class="meta">Posted by
+              <h1>David Velleca<h1>
+              <h2 class="subheading"></h2>
+              <span class="meta">Updated by
                 <a href="https://twitter.com/DavidVelleca">David Velleca</a>
                 on November 3, 2018</span>
             </div>
@@ -75,20 +76,19 @@
       </div>
     </header>
 
-<!-- Post Content -->
-    <article>
-      <div class="container">
-        <div class="row">
-			<h2 class="section-heading">Getting Started</h2>
-				<p>I looked at this dataset as an opportunity to play with some of the new features that I saw demonstrated at Tableau Conference.  Between dashboard buttons, transparent backgrounds and heatmaps, there is a lot to be excited about.  However, in my opinion, one of the most impactful new features is set actions.  I really liked the demonstration of the drillable tree map that was shown during Devs on Stage, and decided this was a great opportunity to replicate that functionality and learn how to work with set actions.</p>
-				<p>So, this viz has two elements - a line chart showing the total cost of the weather events by year, and the aforementioned tree map, showing the breakdown of the cost by event type.  Both of these vizzes can be interacted with through set actions.  Selecting years in the line graph, adjusts the members of the set that drive the tree map - adding the selected years to the set and removing unselected years.  I thought this was a powerful way to explore the breakdown of a selected year's disaster cost by event type.</p>
-				<p>For instance, in the line chart, 2005 sticks out as a year with a high cost tied to weather disasters.  Clicking the point for 2005 filters the tree map below to show that of the $221 billion of total damage, the majority is due to tropical cyclones.  This information is also displayed in the viz in tooltip.  However the impact of the set action on the tree map provides a bit more interactivity, as the user can click on the tropical cyclones segment of the tree map to see the individual events that make up the total costs of the tropical cyclones.</p>
-				<p>Drilling into the tropical cyclones reveals that the $218 billion in damage tied to tropical cyclones was due to 4 major hurricanes, mostly driven by Hurricane Katrina. Clicking off of the selected year in the line chart adds all of the years back into the set, and the tree map updates to show the proportion of the cost of tropical cyclones broken out by each individual hurricane, and the impact of Katrina versus all other billion dollar hurricanes is obvious.  Keep in mind that set actions aren't working right now in Tableau Public, so feel free to download the workbook to play with the actions.</p> 
-				<p>The possibilities for set actions and the opportunity for user interactivity are exciting!  What new features of Tableau can you leverage?  Download the data and see what you can do.  Create your viz and post your work to Tableau Public and Twitter with the hashtag #ThrowbackDataThursday, tagging <a href="https://twitter.com/TThrowbackThurs" target="_blank">@TThrowbackThurs</a>.  We'd really love to see what you can come up with!</p>
-		  </div>
-	  </div>
-    </article>
-      <hr>
+    <!-- Post Preview -->
+		<div class="post-preview"> 
+			
+			<a href="/posts/archive/20181103 Getting Started">
+				<h2 class="post-title">Getting Started</h2>
+				<h3 class="post-subtitle">Starting My Personal Blog</h3>
+			</a>
+			<p class="post-meta">Posted by <a href="https://twitter.com/davidvelleca">David Velleca</a> on November 3, 2018</p>
+			<p>I've been home from TC18 just over a week, and came back full of energy and enthusiasm to continue building my online Tableau presence.  This is similar to how I felt after attending my first conference in 2017, but now I’ve got a base to build upon.  In 2017, I returned home excited about the Tableau Community and how open and helpful the community is.  With that in mind, I set out with the goal to become a part of that community...<a href="/posts/archive/20181103 Getting Started">MORE</a></p>
+          </div>
+          <hr>
+    <hr>
+
 
    <!-- Footer -->
     <footer>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>David Velleca</title>
+  <link>https://davidvelleca.com</link>
+  <description>Thoughts and musings on Data Visualization</description>
+  <item>
+    <title>Investing in my Future - From Spending my Time to Investing it</title>
+	<pubDate>November 8, 2018</pubDate>
+    <link>https://davidvelleca.com/posts/archive/20181108%20Investing</link>
+    <description>Over the past few weeks, I’ve had multiple ancillary conversations with friends about time and how we use it.  The first was on a walk from my hotel to the convention center during Tableau Conference.  A friend and I were discussing the new Screen Time feature in iOS 12.0 that tracks and conveniently displays how much time the user has spent on his or her iPhone.  He mentioned that the results and insights were both shocking and slightly depressing at the same time.  Fortunately, he’d used that data to make some changes in his life, and was happy with the results to date.  After making a mental note that I probably needed to review my usage too, I filed the conversation away...</description>
+  </item>
+  <item>
+    <title>The Viz that Almost Wasn't - From Unpublished to Viz of the Day</title>
+    <link>https://davidvelleca.com/posts/archive/20181104%20The%Viz%20That%20Almost%20Wasnt</link>
+	<pubDate>November 4, 2018</pubDate>
+    <description>On Friday, November 2, I received a notification on my phone that I’d been tagged in a tweet by Tableau Public.  I tapped on the alert and was super excited to see that my viz looking at the most common last names in the United States had been selected as the Viz of the Day.  In addition to my excitement, I also had a bit of a “Wow, I can’t believe they chose that" moment...</description>
+  </item>
+  <item>
+    <title>Getting Started - Starting My Personal Blog</title>
+    <link>https://davidvelleca.com/posts/archive/20181103%20Getting%20Started</link>
+	<pubDate>November 3, 2018</pubDate>
+    <description>I've been home from TC18 just over a week, and came back full of energy and enthusiasm to continue building my online Tableau presence.  This is similar to how I felt after attending my first conference in 2017, but now I’ve got a base to build upon.  In 2017, I returned home excited about the Tableau Community and how open and helpful the community is.  With that in mind, I set out with the goal to become a part of that community...</description>
+  </item>
+</channel>
+
+</rss>

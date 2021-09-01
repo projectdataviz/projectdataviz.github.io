@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-128651188-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		
+		gtag('config', 'UA-128651188-1');
+	</script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon"	  
+      href="/favicon_vpW_icon.ico">
+    <title>David Velleca</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="/css/clean-blog.min.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <style>
+        html, body { height: 100% }
+    </style>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+	      <a class="navbar-brand" href="/index.html"><img src="https://raw.githubusercontent.com/davidvelleca/davidvelleca.github.io/master/Logo.png" width="250"></img></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/archive.html">Archive</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('https://github.com/davidvelleca/davidvelleca.github.io/blob/master/img/BG%20-%20Index.jpg?raw=true')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="post-heading">
+              <h1>The Rock, Paper, Scissors, Lizard, Spock Simulator...<h1>
+              <h2 class="subheading">A Big Bang Theory Inspired Interactive Game</h2>
+              <span class="meta">Posted by
+                <a href="https://twitter.com/DavidVelleca">David Velleca</a>
+                on September 1, 2021</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+<!-- Post Content -->
+    <article>
+      <div class="container">
+        <div class="row">
+			<div class="col-lg-8 col-md-10 mx-auto">
+                <h2 class="section-heading">Let's Play a Game...</h2>
+                    <p>Last week, I published my Friends Random Episode Selector and shared to LinkedIn. One of the comments was a request to do the same thing for The Big Bang Theory.  I looked for data and I didn't find anything that supported an interactive random selector like my Friends version did.  So, instead, I decided to play some Rock, Paper, Scissors, Lizard, Spock.</p>
+                    <p>If you're not familiar with the game, I recommend you go to <a href="https://play.hbomax.com/episode/urn:hbo:episode:GXdXk5gj9SJuAuwEAAB3k" target="_blank">HBO Max and check out the episode "The Lizard-Spock Expansion" - Season 2, Episode 8</a>.  For those that don't want to watch, an quick synopsis...Sheldon and Raj disagree on what to watch ("Saturn 3" vs "Deep Space Nine").  To settle the disagreement, Raj suggests they play Rock, Paper, Scissors.  Insisting that there is too much likelihood of a tie, Sheldon suggests using Rock, Paper, Scissors, Lizard, Spock.  He then goes through the rules that our simulation here uses:</p>
+                    <p>"Scissors cuts paper, paper covers rock, rock crushes lizard, lizard poisons Spock, Spock smashes scissors, scissors decapitates lizard,  lizard eats paper, paper disproves Spock, Spock vaporizes rock and as it  always has, rock crushes scissors."</p>
+                    <p>They still tie, but that's enough background.</p>
+                    <p>The viz below is a play on the game, and leverages a simulation that I ran in Python.  The Python code was adapted from a Rock, Paper Scissors game that I found on the web.  I modified the logic, changed it from a simple game by adding a while loop.  Dumped the data to Excel, and took it into Tableau.  The Python code is at the bottom of this page if you'd like to try it yourself.</p>
+                    <p>In Tableau, with the power of Parameter Actions, a user can come in and start playing Rock, Paper, Scissors, Lizard, Spock from a random starting point in the 5,000 simulations I ran.  With some handy dandy logic (and a LOT of trial and error), the dashboard keeps score for you as well.  In  addition to the functionality of the dashboard, we've got a bit of analysis on the 5,000 simulations I ran.  Not all of the possible analysis, but I didn't want to give away too much :).</p>
+                    <p>Try your hand at some Rock, Paper, Scissors, Lizard, Spock in the dashboard below!</p>
+            </div>
+            <div class='tableauPlaceholder' id='viz1630513554381' style='position: relative'>
+            <noscript>
+                <a href='#'><img alt='RPSLS ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Th&#47;TheRockPaperScissorsLizardSpockSimulator&#47;RPSLS&#47;1_rss.png' style='border: none' />
+                </a>
+                </noscript>
+                    <object class='tableauViz'  style='display:none;'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                        <param name='embed_code_version' value='3' /> 
+                        <param name='site_root' value='' />
+                        <param name='name' value='TheRockPaperScissorsLizardSpockSimulator&#47;RPSLS' />
+                        <param name='tabs' value='no' />
+                        <param name='toolbar' value='yes' />
+                        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Th&#47;TheRockPaperScissorsLizardSpockSimulator&#47;RPSLS&#47;1.png' /> 
+                        <param name='animate_transition' value='yes' />
+                        <param name='display_static_image' value='yes' />
+                        <param name='display_spinner' value='yes' />
+                        <param name='display_overlay' value='yes' />
+                        <param name='display_count' value='yes' />
+                        <param name='language' value='en-US' />
+                    </object>
+                </div>                
+            <script type='text/javascript'>                    v
+                var divElement = document.getElementById('viz1630513554381');                    
+                var vizElement = divElement.getElementsByTagName('object')[0];                    
+                vizElement.style.width='1000px';vizElement.style.height='2027px';                    
+                var scriptElement = document.createElement('script');                    
+                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+                vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+            </script>
+            <div class='tableauPlaceholder'><iframe src="https://trinket.io/embed/python/8905bdb3c4" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></div>
+		</div>
+	  </div>
+    </article>
+      <hr>
+
+   <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <ul class="list-inline text-center">
+              <li class="list-inline-item">
+                <a href="https://twitter.com/davidvelleca">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              <li class="list-inline-item">
+                <a href="https://public.tableau.com/profile/david.c.velleca#!/">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-bar-chart fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+			  <li class="list-inline-item">
+                <a href="https://www.linkedin.com/in/davidvelleca/">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <p class="copyright text-muted">Copyright &copy; davidvelleca.com 2018</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/clean-blog.min.js"></script>
+
+  </body>
+
+</html>

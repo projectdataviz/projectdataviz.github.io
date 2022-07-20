@@ -68,76 +68,72 @@
 
 
     <!-- Page Header -->
-    <header class="masthead" style="background-image: url('bg1.png');")>
+    <header class="masthead" style="background-image: url('bg5.png');")>
       <div class="overlay"></div>
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
             <div class="post-heading">
-              <h1>Project Data Viz!<h1>
+              <h1>Viz for Social Good<h1>
               <h2 class="subheading"></h2>
-              <span class="meta">Updated by
-                <a href="https://twitter.com/DavidVelleca">David Velleca</a>
-                on July 20, 2022</span>
+              <span class="meta">August 2022 #ProjectDataViz Challenge</span>
             </div>
           </div>
         </div>
       </div>
     </header>
+
     <!-- Main Content -->
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-          <!-- Post Preview -->
-          <div class="post-preview">
+          <h2 class="section-heading">This Month's Theme</h2>
+            <p>This is where the background of #ProjectDataViz goes...</p>
+          <h2 class="section-heading">How it Works</h2>
+            <p>Frequency, process, theming, etc.</p>
+          <h2 class="section-heading">How to Participate</h2>
+            <p>Are you a seasoned Data Visualization pro?  Then create your viz, publish it to Tableau Public and promote it on social media with the hashtag #ProjectDataViz!  <a href="/contact.html" target="_blank">Also be sure to submit your viz</a> with us so we can help get the word out about your awesome skills!</p>
+            <p>If you're not a pro, and want to step into this a bit slower, still create your viz and publish to Tableau Public.  <a href="/contact.html" target="_blank">Then come back here and submit your viz and ask for feedback</a>.  Remember, the #ProjectDataViz team have real jobs too, but we'll do our best to review your viz and provide feedback in a timely manner.  Be sure to let the #DataFam know you're growing your Data Viz skills by sharing on social media with the hashtag #ProjectDataViz!  There's no shame in learning and developing your skills!</p>
+        </div>
+      </div>
+    </div>
 
-            <a href="/posts/archive/202208.html">
-              <h2 class="post-title">Viz for Social Good</h2>
-              <h3 class="post-subtitle">August 2022 #ProjectDataViz Challenge</h3>
-            </a>
-              <p class="post-meta">Posted by <a href="https://twitter.com/">ProjectDataViz Team Member</a> on August 2022</p>
-              <p>August theme announcement tag line!<a href="/posts/archive/202208.html">MORE</a></p>            
-		      
-          </div>
-		    </div>
-	    </div>
-	  </div>
     <hr>
 
    <!-- Footer -->
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-md-10 mx-auto">
-            <ul class="list-inline text-center">
-              <li class="list-inline-item">
-                <a href="https://twitter.com/davidvelleca">
-                  <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                  </span>
-                </a>
-              <li class="list-inline-item">
-                <a href="https://public.tableau.com/profile/david.c.velleca#!/">
-                  <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-bar-chart fa-stack-1x fa-inverse"></i>
-                  </span>
-                </a>
-            </ul>
-            <p class="copyright text-muted">Copyright &copy; projectdataviz.com 2022</p>
-          </div>
+   <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+            <li class="list-inline-item">
+              <a href="https://twitter.com/davidvelleca">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            <li class="list-inline-item">
+              <a href="https://public.tableau.com/profile/david.c.velleca#!/">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-bar-chart fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+          </ul>
+          <p class="copyright text-muted">Copyright &copy; projectdataviz.com 2022</p>
         </div>
       </div>
-    </footer>
+    </div>
+  </footer>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Custom scripts for this template -->
-    <script src="js/clean-blog.min.js"></script>
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
 
-  </body>
+</body>
 
 </html>

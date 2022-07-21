@@ -238,7 +238,7 @@ header.masthead .site-heading .subheading {
 }
 
 header.masthead .page-heading .subheading,
-header.masthead .site-heading .subheading a:focus, a:hover {
+header.masthead .site-heading .subheading a:focus, a:hover, a:link {
   color: #ffffff;
 }
 

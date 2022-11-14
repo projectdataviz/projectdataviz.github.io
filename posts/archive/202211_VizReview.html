@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YS61X48CJX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-YS61X48CJX');
+  </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon"	  
+      href="/favicon.ico">
+    <title>Project Data Viz November 2022</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="/css/clean-blog.min.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <style>
+        html, body { height: 100% }
+    </style>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+	      <a class="navbar-brand" href="/index.html"><img src="Logo.png" width="250"></img></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/archive.html">Archive</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact.html">Submit Your Viz</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+   <!-- Page Header -->
+   <header class="masthead" style="background-image: url('bg1.png')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>Reviewing Land Use by Crop Type Vizzes</h1>
+            <span class="subheading">November 2022 #ProjectDataViz Viz Review<br>Published by <a href="https://twitter.com/davidvelleca" style="color:#fff" target="_blank">David Velleca</a> on 14 November 2022</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+    <!-- Main Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <h2 class="section-heading">Reviewing This Month's Theme</h2>
+            <p>For November, our theme is <strong>'Land Use by Crop Type - What's Growing Where?.'</strong>  We challenged the community to create visualizations with a provided data set that covered the different crops grown in 200+ countries from 1961 to 2020.  Let's take a look at some of those vizzes!</p>
+          
+          <h2 class="section-heading">David Velleca</h2>
+            <p>For this month's data, I knew almost immediately that I wanted to use a treemap.  Not because I really like them as a visualization type (I don't necessarily), but because they provide a bit of a skeuomorphic flavor.  When I think of crops growing, I instantly think about to driving past rows and rows of green leafy soybeans, golden corn stalks awaiting harvest or white fields of cotton.  The next thing I think of is flying over the so called "flyover states" and being amazed by the patchwork land that is made up of the modern farm's different crops.  In short, a treemap is a great way to get that same effect while incorporating some nice coloration.</p>
+            <p>Once I had my base visualization figured out, I needed to figure out how to incorporate a data story to go along with the (hopefully) pretty viz.  This data source lends itself nicely to looking at changes over more than a half century of crop growth.  With this in mind, I really only had a few options if I wanted to stick with my treemap.  I could have animated across the different years, but while that may have been an interesting animation, it would be nearly impossibly to compare non-consecutive years to one another.  The other option was small multiples, a way that I could display all of the years in one dashboard allowing users to easily compare the 60 years with one another. With my viz type and data story figured out, it was time to get building.</p>
+            <p>I put together a simple tree map, then went straight to Google and searched "Flerlage Twins Small Multiples" to find my <a href="https://www.flerlagetwins.com/2019/01/small-multiples-just-matter-of-long_60.html" target="_blank">go to method for creating any small multiple grid (check it out!)</a>.  You know it's good when it's cached in your Chrome search history!  Speaking of history, I was curious how long small multiples have been around in the data visualization world, so I did another Google search and ended up on Wikipedia.  Small multiples have been around for about 150 years, with the first known (at least to Wikipedia) example being by Francis Walker.  Interestingly enough, that example (seen below) was a treemap small multiple.  I think the viz is really quite beautiful, and decided to use it as my inspiration for my final product.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Persons_With_Gainful_Occupations_and_Attending_School_in_1870.jpg" class="img-fluid" alt="Francis A. Walker's small multiple treemaps 'Persons with gainful occupations and attending school'">
+            <p>I really liked the darker color palette and decided to leverage something similar for my viz.  With the treemaps created, I created some calculated fields that controlled how my labels behaved - I wanted to include the Year, and also indicate which year had the largest number of acres harvested with a small star.  I also only wanted the labels to appear once, on the largest piece of the treemap.  A couple calcs later and I was squared away.  Next up was a bit of interactivity.</p>
+            <p>What would be the point of having this great dataset with country level detail in it without giving some way to get a bit deeper.  Well, since the time period in the data spanned loads of geopolitical change (especially the breakup of the Soviet Union), I decided to drilling into countries that no longer have boundaries on the map may be a bit tricky.  Instead, I grouped countries by continent using the UN's designation and mapped them.  With a few simple calcs, the map then becomes the control for a parameter action that allows the user to select a continent.  I also added a mechanism to switch from the total acres harvested to percent of total land harvested for each year.  When the viz opens, it defaults to total acreage, and behind each treemap that has fewer acres harvested than the max, a light brown "ghost" box behind the viz indicates the max acres harvested to make comparison easy for the user.</p>
+            <p>Add in a few calcs to clean up my tooltips, and that's this viz.  I'm really happy with how it turned out, but definitely open to feedback!</p>
+            <div class='tableauPlaceholder' id='viz1668442421535' style='position: relative'><noscript><a href='#'><img alt='Growing our Food ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Gr&#47;GrowingourFood&#47;GrowingourFood&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='GrowingourFood&#47;GrowingourFood' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Gr&#47;GrowingourFood&#47;GrowingourFood&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1668442421535');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='800px';vizElement.style.height='1227px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+        
+          <h2 class="section-heading">Thanks!</h2>
+            <p>Stay tuned for more October vizzes, but thanks for checking out this post!  Be sure to join us for <a href="/index.html">November's Challenge!</a></p>  
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+   <!-- Footer -->
+   <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+            <li class="list-inline-item">
+              <a href="https://twitter.com/SEO5Chung">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            <li class="list-inline-item">
+              <a href="https://public.tableau.com/app/profile/simon.chung">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-bar-chart fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+          </ul>
+          <p class="copyright text-muted">Copyright &copy; projectdataviz.com 2022</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>

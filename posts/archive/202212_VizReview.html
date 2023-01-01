@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YS61X48CJX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-YS61X48CJX');
+  </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon"	  
+      href="/favicon.ico">
+    <title>Project Data Viz December 2022</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="/css/clean-blog.min.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <style>
+        html, body { height: 100% }
+    </style>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+	      <a class="navbar-brand" href="/index.html"><img src="Logo.png" width="250"></img></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/archive.html">Archive</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact.html">Submit Your Viz</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+   <!-- Page Header -->
+   <header class="masthead" style="background-image: url('bg5.png')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>Reviewing Electricty Generation</h1>
+            <span class="subheading">December 2022 #ProjectDataViz Viz Review<br>Updated by <a href="https://twitter.com/davidvelleca" style="color:#fff" target="_blank">David Velleca</a> on 31 December 2022</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+    <!-- Main Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <h2 class="section-heading">Reviewing This Month's Theme</h2>
+            <p>For November, our theme is <strong>'Land Use by Crop Type - What's Growing Where?.'</strong>  We challenged the community to create visualizations with a provided data set that covered the different crops grown in 200+ countries from 1961 to 2020.  Let's take a look at some of those vizzes!</p>
+          
+          <h2 class="section-heading">David Velleca</h2>
+            <p>This month's topic is an important one globally but I chose to focus on data for the UK only. Initially I was trying to think of something more interesting than a line or area chart with a filter for country. That's when I remembered about Joy plots which are overlapping area charts. These can be useful if you have a number of area charts that make the visualisation vertically rather long. Using joy plots condenses the visualisation and make it easier to see overall trends at a glance. However they do have limitations and I soon discovered that it would not work for every country in the data set. So I decided to use only the UK data and set about creating my own joy plot.</p>
+            <p><a href="https://www.flerlagetwins.com/2018/05/joy-plot.html?m=1" target ="_blank">Ken Flerlage has created an excellent blog which explains everything you need to know about Joy Plots and how to create them.</a></p>
+            <p>I had to choose the order and spacing of my dimensions carefully so that I could keep the chart as small as possible vertically while making sure that the top of each area chart was not hidden. Colour was also an important consideration because I wanted a different colour for each dimension so had to find nine colours that went well together. The result is a simple viz that makes it easy to see the trends in the data over the 22 years.</p>
+            <div class='tableauPlaceholder' id='viz1672536612757' style='position: relative'><noscript><a href='#'><img alt='Dashboard ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;El&#47;ElectricityProductionbySourceUK&#47;Dashboard&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='ElectricityProductionbySourceUK&#47;Dashboard' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;El&#47;ElectricityProductionbySourceUK&#47;Dashboard&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1672536612757');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1000px';vizElement.style.height='827px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+        
+            <h2 class="section-heading">David Velleca</h2>
+            <div class='tableauPlaceholder' id='viz1672536756730' style='position: relative'><noscript><a href='#'><img alt='G7 Electricity Generation ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;De&#47;DecarbonizingtheElectricityGenerationoftheG7&#47;G7ElectricityGeneration&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='DecarbonizingtheElectricityGenerationoftheG7&#47;G7ElectricityGeneration' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;De&#47;DecarbonizingtheElectricityGenerationoftheG7&#47;G7ElectricityGeneration&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1672536756730');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='800px';vizElement.style.height='1427px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+          <h2 class="section-heading">Thanks!</h2>
+            <p>Stay tuned for more December vizzes, but thanks for checking out this post!  Be sure to join us for <a href="/index.html">November's Challenge!</a></p>  
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+   <!-- Footer -->
+   <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+            <li class="list-inline-item">
+              <a href="https://twitter.com/SEO5Chung">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            <li class="list-inline-item">
+              <a href="https://public.tableau.com/app/profile/simon.chung">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-bar-chart fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+          </ul>
+          <p class="copyright text-muted">Copyright &copy; projectdataviz.com 2022</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>

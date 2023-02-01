@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YS61X48CJX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-YS61X48CJX');
+  </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon"	  
+      href="/favicon.ico">
+    <title>Project Data Viz January 2023</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="/css/clean-blog.min.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <style>
+        html, body { height: 100% }
+    </style>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+	      <a class="navbar-brand" href="/index.html"><img src="Logo.png" width="250"></img></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/archive.html">Archive</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact.html">Submit Your Viz</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+   <!-- Page Header -->
+   <header class="masthead" style="background-image: url('bg5.png')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>Reviewing Piracy Vizzes</h1>
+            <span class="subheading">January 2023 #ProjectDataViz Viz Review<br>Updated by <a href="https://twitter.com/davidvelleca" style="color:#fff" target="_blank">David Velleca</a> on 1 February 2023</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+    <!-- Main Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <h2 class="section-heading">Reviewing This Month's Theme</h2>
+            <p>For January, our theme was <strong>Piracy</strong>  We challenged the community to create visualizations with a provided data set that covered the reported acts of piracy from 2000 to 2022.  Let's take a look at some of those vizzes!</p>
+          <h2 class="section-heading">Morag Munro</h2>
+            <p>My initial idea for the piracy data was to use a map view to show where attacks took place however it soon became clear that the longitude / latitude columns in the data set were not accurately populated. I decided instead to look at the frequency of attacks over the twenty three year period and I chose a spiral chart to illustrate this.</p>
+            <p>Spiral charts are handy for showing a long time period without taking up as much space as a line or bar chart. I also thought that my spiral chart reminded me a little of a whirlpool which fits well with the topic.</p>
+            <p>I used the red colour pallette to emphasise the years where attacks were higher and also made use of Tableau’s highlight action to hone in on a specific year or ship’s flag. Since the data contains a fair amount of detail for each attack, I made use of that to create a user friendly tooltip that gave more background to each incident. Adding an underwater image to the background gave the finishing touch.</p>
+            <div class='tableauPlaceholder' id='viz1675291406771' style='position: relative'><noscript><a href='#'><img alt='Piracy ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pi&#47;PirateAttacksinthe21stCentury&#47;Piracy&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='PirateAttacksinthe21stCentury&#47;Piracy' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pi&#47;PirateAttacksinthe21stCentury&#47;Piracy&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1675291406771');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1200px';vizElement.style.height='927px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+          <h2 class="section-heading">Billy Flannery</h2>
+            <p>On reading this months theme my thoughts immediately went to sailing ships, cannons and eye-patched buccaneers. Modern piracy may be far removed from these images, but is still very much alive today and as long as there are ships travelling trade routes laden with goods there will still be opportunistic criminals looking to take advantage.</p>
+            <p>I wanted to go with a nautical theme and I remembered an impressive wave chart from Vamshi Krishna I happened across on Tableau public that I thought I could adapt to suit. <a href="https://public.tableau.com/app/profile/vamshi/viz/WaveChartTemplate/Dashboard1" target="_blank"> Found here.</a></p>
+            <p>For the wave charts I decided to show 4 categories: weapons used, part of ship raided, consequences and crew consequences with each wave showing the percentage of incidents within each category descending, which did have a nice wave effect. I originally wanted to make this interactive with a filter on ship types and year, but with this type of chart I found that the marks can overlap the lines and become lost, so this had to remain static and I even had to manually fix some of the marks to make it work.</p>
+            <p>Because I was unable to show incidents by year and ship type in my original method, I decided to incorporate a joy plot showing this instead at the bottom of the viz which also added to the overall wave theme.</p>
+            <p>I wanted to highlight the parts of the world where piracy is most common, but the dataset was missing Latitude and Longitude data for a large amount of the incidents, and some were even in the middle of a continent! I decided to  clean up some of the obvious errors (thank you  international Maritime Bureau) and use a density map to show location data (where available). This was placed as a background to the main charts just as an indicator of the areas where world piracy is prevalent.</p>
+            <p>Finally I wanted to include some BANs showing the consequences to crew which acts as a stark reminder that piracy is not just a thing of the past and can still have dangerous and deadly consequences today.</p>
+            <div class='tableauPlaceholder' id='viz1675291371063' style='position: relative'><noscript><a href='#'><img alt='Modern Piracy ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pi&#47;Piracy2000to2022&#47;ModernPiracy&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Piracy2000to2022&#47;ModernPiracy' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pi&#47;Piracy2000to2022&#47;ModernPiracy&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1675291371063');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1500px';vizElement.style.height='1227px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+          <h2 class="section-heading">David Velleca</h2>
+            <p>I bounced between several different ideas before landing on a simple heatmap, with bars to summarize total attacks by month and year.  But that's not all!  Taking some inspiration from the subject matter, I decided to bury some treasure in the viz and use the new-ish dynamic zone visibility to hide that treasure.  Really, it's a simple click parameter action that drives the dynamic zone visibility by setting the target parameter to either a selected month & date combo or resetting it to "none" to return to the main view.  The "treasure" view simply contains some additional detail for the selected timeframe.</p>
+            <div class='tableauPlaceholder' id='viz1675291339364' style='position: relative'><noscript><a href='#'><img alt='Piracy in the Modern Seas ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pi&#47;PiracyintheModernSeas&#47;PiracyintheModernSeas&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='PiracyintheModernSeas&#47;PiracyintheModernSeas' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pi&#47;PiracyintheModernSeas&#47;PiracyintheModernSeas&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1675291339364');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='800px';vizElement.style.height='1627px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+          <h2 class="section-heading">Thanks!</h2>
+            <p>Stay tuned for more January vizzes, and thanks for checking out this post!  Be sure to join us for <a href="/index.html">February's Challenge!</a></p>  
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+   <!-- Footer -->
+   <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+            <li class="list-inline-item">
+              <a href="https://twitter.com/SEO5Chung">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            <li class="list-inline-item">
+              <a href="https://public.tableau.com/app/profile/simon.chung">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-bar-chart fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+          </ul>
+          <p class="copyright text-muted">Copyright &copy; projectdataviz.com 2022</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
